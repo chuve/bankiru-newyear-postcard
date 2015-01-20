@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>С Новым годом и Рождеством!</title>
+        <meta name="keywords" content="С Новым годом и Рождеством!"/>
+        <meta name="description" content="С Новым годом и Рождеством!"/>
+        <link rel="stylesheet" href="style/newyear2015-preloader.css"/>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css"/>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+        <style>
+            html {
+                font-family: 'PT Sans', sans-serif;
+            }
+
+            .main {
+                width: 1200px;
+                height: 1420px;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="newyear2015__loader">
+                <div class="newyear2015__loader-snowflake">
+                    <div class="newyear2015__loader-snowflake__image"></div>
+                    <div class="newyear2015__loader-snowflake__text">Загрузка</div>
+                </div>
+            </div>
+
+            <div class="newyear2015">
+                <div class="newyear2015__sky">
+                    <div class="newyear2015__title">С Новым годом и Рождеством!</div>
+                    <div class="newyear2015__moon"></div>
+                    <div class="newyear2015__santaclaus"></div>
+                    <div class="newyear2015__forest"></div>
+                    <div class="newyear2015__snowline"></div>
+                    <div class="newyear2015__snowflakes" id="snowflakes"></div>
+                    <div class="newyear2015__snowfalls">
+                        <div class="newyear2015__snowfalls-wrapper">
+                            <div class="newyear2015__snowfall newyear2015__snowfall--small"></div>
+                            <div class="newyear2015__snowfall newyear2015__snowfall--big"></div>
+                        </div>
+                    </div>
+                </div>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js"></script>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+                <script>
+                    require.config({
+                        paths: {
+                            'jquery': './js/jquery.min',
+                            'underscore': './js/underscore-min',
+                            'utils.html-builder': './js/html-builder'
+                        }
+                    });
+                </script>
+                <script>
+                    require(['./js/newyear2015.js']);
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
