@@ -82,12 +82,12 @@ define('utils.html-builder', ['underscore'], function (_, undefined) {
 
 		if (_.isObject(attrs)) {
 			_.each(attrs, function(value, key) {
-				if (typeof value !== 'undefined') { // если undefined то не добавляем атрибут
+				if (typeof value !== 'undefined') { // РµСЃР»Рё undefined С‚Рѕ РЅРµ РґРѕР±Р°РІР»СЏРµРј Р°С‚СЂРёР±СѓС‚
 					if (_.isBoolean(value)) {
 						if (value) {
 							attrArray.push(key);
 						} else {
-							// если false то не добавляем атрибут
+							// РµСЃР»Рё false С‚Рѕ РЅРµ РґРѕР±Р°РІР»СЏРµРј Р°С‚СЂРёР±СѓС‚
 						}
 					} else {
 						attrArray.push(key + '="' + value + '"');
